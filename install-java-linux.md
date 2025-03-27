@@ -19,3 +19,18 @@ tar xvf jdk1.8.0_241.tgz -C /usr/java
 ```bash
 echo "export JAVA_HOME=/usr/java/jdk1.8.0_241" | sudo tee -a /etc/profile
 ```
+
+### **Step 4: Configure Java with Alternatives**
+```bash
+sudo alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_241/bin/java 2
+sudo alternatives --config java
+```
+
+### **Step 5: Configure Javac and Jar**
+```bash
+sudo alternatives --install /usr/bin/javac javac /usr/java/jdk1.8.0_241/bin/javac 2
+sudo alternatives --config javac
+
+sudo alternatives --install /usr/bin/jar jar /usr/java/jdk1.8.0_241/bin/jar 2
+sudo alternatives --config jar
+```
