@@ -41,3 +41,16 @@ java -version
 javac -version
 echo $JAVA_HOME
 ```
+
+## Method 2: Installing Java via Package Manager
+
+### **For RHEL/CentOS/Fedora**
+```bash
+sudo dnf install java-1.8.0-openjdk-devel
+```
+
+### **For Ubuntu/Debian**
+```bash
+sudo apt update
+sudo apt install openjdk-8-jdk
+```
