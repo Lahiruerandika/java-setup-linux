@@ -34,3 +34,10 @@ sudo alternatives --config javac
 sudo alternatives --install /usr/bin/jar jar /usr/java/jdk1.8.0_241/bin/jar 2
 sudo alternatives --config jar
 ```
+
+### **Step 6: Verify Java Installation**
+```bash
+java -version
+javac -version
+echo $JAVA_HOME
+```
