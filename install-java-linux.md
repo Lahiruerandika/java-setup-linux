@@ -54,3 +54,10 @@ sudo dnf install java-1.8.0-openjdk-devel
 sudo apt update
 sudo apt install openjdk-8-jdk
 ```
+
+## Method 3: Installing Java Using SDKMAN! (Recommended for Developers)
+```bash
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 8.0.292-open
+```
